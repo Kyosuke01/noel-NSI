@@ -96,7 +96,7 @@ html {
 nav {
   display: flex;
   justify-content: space-evenly;
-  font-size: 17.5px;
+  font-size: 20px;
   align-items: center;
 }
 
@@ -125,4 +125,17 @@ nav {
 .nav-liste3:hover {
   color: #c7cdd4;
   transition: 0.2s linear;
+}
+
+.nav-neige {
+  display: flex;
+  justify-content: center;
+  margin-top: -35px;
+  margin-bottom: -35px;
+  overflow: hidden;
+}
+
+.element-neige {
+  margin: 0 -20px;
+  z-index: 1;
 }

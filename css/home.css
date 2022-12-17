@@ -76,7 +76,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 215px;
 }
 
 .boule-left,
@@ -87,7 +86,7 @@
 
 /* Boules rouges (start) */
 .boule-rouge-home {
-  width: 100px;
+  width: 200px;
   margin-left: 50px;
   transform: rotate(10deg);
 }
@@ -112,7 +111,7 @@
 /* Boules jaunes (start) */
 
 .boule-jaune-home {
-  width: 100px;
+  width: 200px;
   margin: 50px 50px;
   transform: rotate(-10deg);
 }
@@ -159,5 +158,115 @@
   }
   90% {
     text-shadow: 0 0 7px #000, 0 0 50px #000;
+  }
+}
+
+.sapin-home {
+  z-index: 1;
+  width: 550px;
+}
+
+.gifts {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 215px;
+}
+
+.left-gift,
+.right-gift {
+  width: 10%;
+}
+
+.left-gift {
+  margin-right: 50px;
+  animation: left-gift 1s linear infinite;
+}
+
+.right-gift {
+  margin-left: 50px;
+  animation: right-gift 1s linear infinite;
+}
+
+@keyframes left-gift {
+  0% {
+    transform: rotate(0deg);
+  }
+  14% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(2deg);
+  }
+  17% {
+    transform: rotate(-5deg);
+  }
+  20% {
+    transform: rotate(7deg);
+  }
+  25% {
+    transform: rotate(-8deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  45% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(11deg);
+  }
+  55% {
+    transform: rotate(-11deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+  65% {
+    transform: rotate(-9deg);
+  }
+  66% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes right-gift {
+  0% {
+    transform: rotate(0deg);
+  }
+  44% {
+    transform: rotate(0deg);
+  }
+  45% {
+    transform: rotate(2deg);
+  }
+  47% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(7deg);
+  }
+  55% {
+    transform: rotate(-8deg);
+  }
+  70% {
+    transform: rotate(9deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  80% {
+    transform: rotate(11deg);
+  }
+  85% {
+    transform: rotate(-11deg);
+  }
+  90% {
+    transform: rotate(10deg);
+  }
+  95% {
+    transform: rotate(-9deg);
+  }
+  96% {
+    transform: rotate(0deg);
   }
 }
