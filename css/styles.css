@@ -139,3 +139,87 @@ nav {
   margin: 0 -20px;
   z-index: 1;
 }
+
+/* @media screen and (max-width: 425px) {
+  .box {
+    display: block;
+  }
+  .nav-home1 {
+    display: none;
+  }
+  .nav-liste1 {
+    display: none;
+  }
+  .nav-venezuela1 {
+    display: none;
+  }
+  #my-audio {
+    display: none;
+  }
+}
+
+/* Animation burger (Start) */
+
+/* .box {
+  width: 150px;
+  height: 150px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+}
+
+.container-lignes {
+  width: 100px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.ligne {
+  position: absolute;
+  border-radius: 10px;
+  width: 100px;
+  height: 10px;
+  background-color: black;
+}
+
+.box .ligne:nth-child(1) {
+  top: 0px;
+}
+.box .ligne:nth-child(2) {
+  top: 25px;
+}
+.box .ligne:nth-child(3) {
+  top: 50px;
+}
+
+.b1 .ligne:nth-child(1),
+.ligne:nth-child(3) {
+  transform: rotate(0deg);
+  transition: transform 0.4s ease-in-out, top 0.4s 0.4s ease-in-out;
+}
+
+.b1 .ligne:nth-child(2) {
+  transition: opacity 0.4s 0.4s ease-in-out;
+}
+
+.b1.active .ligne:nth-child(1) {
+  top: 25px;
+  transform: rotate(45deg);
+  transition: top 0.4s ease-in-out, transform 0.4s 0.4s ease-in-out;
+}
+.b1.active .ligne:nth-child(2) {
+  transition: opacity 0.4s ease-in-out;
+  opacity: 0;
+}
+.b1.active .ligne:nth-child(3) {
+  top: 25px;
+  transform: rotate(-45deg);
+  transition: top 0.4s ease-in-out, transform 0.4s 0.4s ease-in-out;
+}
+
+Animation burger (End) */
