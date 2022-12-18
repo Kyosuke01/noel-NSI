@@ -81,3 +81,14 @@
 .texte a {
   color: red;
 }
+
+.div-image1 {
+  display: flex;
+  justify-content: center;
+}
+
+.image1 {
+  box-shadow: 10px 10px 30px #ffd700;
+  margin-bottom: 200px;
+  width: 50%;
+}
