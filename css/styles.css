@@ -140,86 +140,115 @@ nav {
   z-index: 1;
 }
 
-/* @media screen and (max-width: 425px) {
-  .box {
-    display: block;
+@media screen and (max-width: 800px) {
+  nav {
+    font-size: 17px;
   }
-  .nav-home1 {
-    display: none;
-  }
-  .nav-liste1 {
-    display: none;
-  }
-  .nav-venezuela1 {
-    display: none;
+  .nav-bar {
+    padding: 12px 0;
   }
   #my-audio {
-    display: none;
+    height: 40px;
+    width: 200px;
+  }
+  @media screen and (max-width: 700px) {
+    nav {
+      font-size: 14px;
+    }
+    .nav-bar {
+      padding: 9px 0;
+    }
+    #my-audio {
+      height: 35px;
+      width: 175px;
+    }
+    @media screen and (max-width: 630px) {
+      nav {
+        font-size: 10px;
+      }
+      .nav-bar {
+        padding: 7px 0;
+      }
+      #my-audio {
+        height: 25px;
+        width: 150px;
+      }
+      @media screen and (max-width: 570px) {
+        nav {
+          font-size: 10px;
+        }
+        .nav-bar {
+          padding: 5px 0;
+        }
+        #my-audio {
+          height: 25px;
+          width: 155px;
+        }
+        /* Mettre l'effet avec le burger */
+      }
+    }
   }
 }
 
-/* Animation burger (Start) */
-
-/* .box {
-  width: 150px;
-  height: 150px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  position: relative;
+@media screen and (max-width: 800px) {
+  .header-banner {
+    height: 175px;
+    font-size: 85px;
+  }
+  @media screen and (max-width: 735px) {
+    .header-banner {
+      height: 150px;
+      font-size: 70px;
+    }
+    @media screen and (max-width: 700px) {
+      .header-banner {
+        height: 125px;
+        font-size: 55px;
+      }
+      @media screen and (max-width: 630px) {
+        .header-banner {
+          height: 100px;
+          font-size: 40px;
+        }
+        @media screen and (max-width: 500px) {
+          .header-banner {
+            height: 90px;
+            font-size: 35px;
+          }
+        }
+      }
+    }
+  }
 }
 
-.container-lignes {
-  width: 100px;
-  height: 60px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
+.responsive-neige {
+  display: none;
 }
 
-.ligne {
-  position: absolute;
-  border-radius: 10px;
-  width: 100px;
-  height: 10px;
-  background-color: black;
+@media screen and (max-width: 800px) {
+  .nav-neige {
+    height: 40px;
+    margin-bottom: -15px;
+  }
+  @media screen and (max-width: 630px) {
+    .nav-neige {
+      height: 30px;
+      margin-bottom: -10px;
+    }
+    @media screen and (max-width: 630px) {
+      .nav-neige {
+        height: 22px;
+        margin-bottom: -10px;
+      }
+      @media screen and (max-width: 500px) {
+        .nav-neige {
+          height: 15px;
+          margin-bottom: -10px;
+        }
+        .responsive-neige {
+          display: block;
+        }
+      }
+    }
+  }
 }
-
-.box .ligne:nth-child(1) {
-  top: 0px;
-}
-.box .ligne:nth-child(2) {
-  top: 25px;
-}
-.box .ligne:nth-child(3) {
-  top: 50px;
-}
-
-.b1 .ligne:nth-child(1),
-.ligne:nth-child(3) {
-  transform: rotate(0deg);
-  transition: transform 0.4s ease-in-out, top 0.4s 0.4s ease-in-out;
-}
-
-.b1 .ligne:nth-child(2) {
-  transition: opacity 0.4s 0.4s ease-in-out;
-}
-
-.b1.active .ligne:nth-child(1) {
-  top: 25px;
-  transform: rotate(45deg);
-  transition: top 0.4s ease-in-out, transform 0.4s 0.4s ease-in-out;
-}
-.b1.active .ligne:nth-child(2) {
-  transition: opacity 0.4s ease-in-out;
-  opacity: 0;
-}
-.b1.active .ligne:nth-child(3) {
-  top: 25px;
-  transform: rotate(-45deg);
-  transition: top 0.4s ease-in-out, transform 0.4s 0.4s ease-in-out;
-}
-
-Animation burger (End) */

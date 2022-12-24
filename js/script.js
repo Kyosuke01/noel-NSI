@@ -11,12 +11,6 @@ TL1.from(nav_home, 1.3, { opacity: 0 }, "+=0.3")
 
 TL1.play();
 
-burger.forEach((box) => {
-  box.addEventListener("click", (e) => {
-    e.target.classList.toggle("active");
-  });
-});
-
 alert("✅ Vous vous trouvez bien sur le site de Xavier et Baptiste !");
 alert(
   "⚠️ Vous pouvez écouter de la belle musique à l'aide de la source audio se situant à côté des autres pages !"
