@@ -1,10 +1,14 @@
 <!DOCTYPE html>
+<!-- Début du code : Précision de la langue du site / 'oncontextmenu="return false;"' = Bloquer le clique droit (option) sur le site -->
 <html lang="fr" oncontextmenu="return false;">
 
 <head>
+	<!-- Meta permettant d'afficher tous les caractères -->
 	<meta charset="UTF-8" />
+	<!-- Titre de la page -->
 	<title>Noël</title>
 
+	<!-- Affichage sur les réseaux / internet -->
 	<meta name="description" content="Website for project in NSI">
 	<meta property="og:title" content="Noel-NSI">
 	<meta property="og:type" content="website">
@@ -25,17 +29,22 @@
 	<meta name="keywords" content="project, NSI, Noel, noel, nsi, Project, projet, Projet, class">
 	<meta name="author" content="Baptiste_&_Xavier">
 
+	<!-- Icone de la page -->
 	<link rel="shortcun icon" href="images/sapin-head.png">
+	<!-- Fichiers css liés -->
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
+	<!-- Bannière de haut de page -->
 	<header class="header-banner">
-		<p class="text-noel-banner">Noël</p>
+		<p>Noël</p>
 	</header>
 
+	<!-- Ligne de neige entre la bannière de haut de page et la barre de navigation -->
 	<div class="nav-neige">
+		<!-- 'draggable="false"' = Impossible de toucher à l'image sans la sélectionner (surlignage bleu) -->
 		<img class="element-neige" src="images/nav-neige.png" alt="neige.png" draggable="false">
 		<img class="element-neige" src="images/nav-neige.png" alt="neige.png" draggable="false">
 		<img class="element-neige" src="images/nav-neige.png" alt="neige.png" draggable="false">
@@ -46,20 +55,25 @@
 		<img class="element-neige responsive-neige" src="images/nav-neige.png" alt="neige.png" draggable="false">
 	</div>
 
+	<!-- Barre de navigation -->
 	<nav class="nav-bar">
 		<p class="nav-home1"><i class="fa-solid fa-house"></i> Home</p>
 		<a class="nav-liste1" href="liste.html"><i class="fa-solid fa-gift"></i> Liste de Noël</a>
 		<a class="nav-venezuela1" href="venezuela.html"><i class="fa-solid fa-flag"></i> Noël au Vénézuela</a>
+		<!-- Source audio de la page (dans la barre de navigation) -->
 		<audio id="my-audio" controls="true" autoplay loop>
 			<source src="musiques/merry-christmas.mp3" type="audio/mp3">
 		</audio>
 	</nav>
 
+	<!-- Corps de la page -->
 	<div class="body-home">
+		<!-- 'Joyeux Noël !' + Cadeau en haut du corps -->
 		<div class="happyNewYearAndGift">
+			<!-- 'Joyeux Noël !' -->
 			<p class="happy-new-year-home">Joyeux Noël !</p>
 
-			<!-- cadeaux -->
+			<!-- Cadeau -->
 
 			<div class="div-gift">
 				<a class="link-gift" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img
@@ -68,22 +82,22 @@
 			</div>
 		</div>
 
-
+		<!-- Corps de la page avec des boules de noël à gauche et à droite + un sapin au milieu -->
 		<div class="vitrine-home">
 
-			<!-- boules de noels à gauche -->
+			<!-- Boules de noël à gauche -->
 			<div class="boule-left">
 				<img class="boule-rouge-home" src="images/boule-rouge.png" alt="boule-rouge.png" draggable="false">
 				<img class="boule-jaune-home" src="images/boule-jaune.png" alt="boule-jaune.png" draggable="false">
 				<img class="boule-rouge-home" src="images/boule-rouge.png" alt="boule-rouge.png" draggable="false">
 			</div>
 
-			<!-- Sapin animé -->
+			<!-- Sapin -->
 			<div>
 				<img class="sapin-home" src="images/sapin.png" alt="sapin.gif" draggable="false">
 			</div>
 
-			<!-- boules de noels à droite -->
+			<!-- Boules de noël à droite -->
 			<div class="boule-right">
 				<img class="boule-rouge-home" src="images/boule-rouge.png" alt="boule-rouge.png" draggable="false">
 				<img class="boule-jaune-home" src="images/boule-jaune.png" alt="boule-jaune.png" draggable="false">
@@ -91,11 +105,16 @@
 			</div>
 
 		</div>
+		<!-- Ajouter de l'espace en bas de page pour rendre moins serré -->
 		<p class="vide">&nbsp</p>
 	</div>
 
+	<!-- Contenu utile en javascript -->
+	<!-- Bibliothèque 'Font Awesome' pour mettre des icones réagissant (en css) comme un texte -->
 	<script src="https://kit.fontawesome.com/cb9da243d3.js" crossorigin="anonymous"></script>
+	<!-- Autre lien javascript (permet d'afficher les alertes d'après les tests) -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+	<!-- Lie le fichier js sélectionné avec la page -->
 	<script src="js/script.js"></script>
 </body>
 

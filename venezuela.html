@@ -1,10 +1,14 @@
 <!DOCTYPE html>
+<!-- Début du code : Précision de la langue du site / 'oncontextmenu="return false;"' = Bloquer le clique droit (option) sur le site -->
 <html lang="fr" oncontextmenu="return false;">
 
 <head>
+    <!-- Meta permettant d'afficher tous les caractères -->
     <meta charset="UTF-8" />
+    <!-- Titre de la page -->
     <title>Noël - Vénézuela</title>
 
+    <!-- Affichage sur les réseaux / internet -->
     <meta name="description" content="Website for project in NSI">
     <meta property="og:title" content="Noel-NSI">
     <meta property="og:type" content="website">
@@ -25,35 +29,46 @@
     <meta name="keywords" content="project, NSI, Noel, noel, nsi, Project, projet, Projet, class">
     <meta name="author" content="Baptiste_&_Xavier">
 
+    <!-- Icone de la page -->
     <link rel="shortcun icon" href="images/sapin-head.png">
+    <!-- Fichiers css liés -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/venezuela.css">
 </head>
 
 <body>
+    <!-- Bannière de haut de page -->
     <header class="header-banner">
         <p>Noël</p>
     </header>
 
+    <!-- Ligne de neige entre la bannière de haut de page et la barre de navigation -->
     <div class="nav-neige">
+        <!-- 'draggable="false"' = Impossible de toucher à l'image sans la sélectionner (surlignage bleu) -->
         <img class="element-neige" src="images/nav-neige.png" alt="neige.png" draggable="false">
         <img class="element-neige" src="images/nav-neige.png" alt="neige.png" draggable="false">
         <img class="element-neige" src="images/nav-neige.png" alt="neige.png" draggable="false">
         <img class="element-neige" src="images/nav-neige.png" alt="neige.png" draggable="false">
         <img class="element-neige" src="images/nav-neige.png" alt="neige.png" draggable="false">
         <img class="element-neige" src="images/nav-neige.png" alt="neige.png" draggable="false">
+        <img class="element-neige responsive-neige" src="images/nav-neige.png" alt="neige.png" draggable="false">
+        <img class="element-neige responsive-neige" src="images/nav-neige.png" alt="neige.png" draggable="false">
     </div>
 
+    <!-- Barre de navigation -->
     <nav class="nav-bar">
         <a class="nav-home3" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
         <a class="nav-liste3" href="liste.html"><i class="fa-solid fa-gift"></i> Liste de Noël</a>
         <p class="nav-venezuela3"><i class="fa-solid fa-flag"></i> Noël au Vénézuela</p>
+        <!-- Source audio de la page (dans la barre de navigation) -->
         <audio id="my-audio" controls="true" autoplay loop>
             <source src="musiques/venezuela.mp3" type="audio/mp3">
         </audio>
     </nav>
 
+    <!-- Corps de la page -->
     <div class="body-venezuela">
+        <!-- Texte en haut de la page expliquant Noël au Vénézuela -->
         <p class="texte">Au <a href="https://fr.wikipedia.org/wiki/Venezuela"
                 target="_blank"><strong>Venezuela</strong></a>, noël ne se
             passe pas comme en France.
@@ -70,6 +85,7 @@
                 actuellement)</i> qui est une musique avec un style particulier.
         </p>
 
+        <!-- Image simple d'un Noël représentatif -->
         <div class="div-image1">
             <img class="image1" src="images/venezuela-tradition-fete.jpeg" alt="noel-tradition-au-vénézuela.jpeg"
                 draggable="false">
@@ -77,6 +93,8 @@
 
     </div>
 
+    <!-- Contenu utile en javascript -->
+    <!-- Bibliothèque 'Font Awesome' pour mettre des icones réagissant (en css) comme un texte -->
     <script src="https://kit.fontawesome.com/cb9da243d3.js" crossorigin="anonymous"></script>
 </body>
 

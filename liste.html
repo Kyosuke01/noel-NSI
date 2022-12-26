@@ -1,10 +1,14 @@
 <!DOCTYPE html>
+<!-- Début du code : Précision de la langue du site / 'oncontextmenu="return false;"' = Bloquer le clique droit (option) sur le site -->
 <html lang="fr" oncontextmenu="return false;">
 
 <head>
+    <!-- Meta permettant d'afficher tous les caractères -->
     <meta charset="UTF-8" />
+    <!-- Titre de la page -->
     <title>Noël - Liste</title>
 
+    <!-- Affichage sur les réseaux / internet -->
     <meta name="description" content="Website for project in NSI">
     <meta property="og:title" content="Noel-NSI">
     <meta property="og:type" content="website">
@@ -25,41 +29,55 @@
     <meta name="keywords" content="project, NSI, Noel, noel, nsi, Project, projet, Projet, class">
     <meta name="author" content="Baptiste_&_Xavier">
 
+    <!-- Icone de la page -->
     <link rel="shortcun icon" href="images/sapin-head.png">
+    <!-- Fichiers css liés -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/liste.css">
 </head>
 
 <body>
+    <!-- Bannière de haut de page -->
     <header class="header-banner">
         <p>Noël</p>
     </header>
 
+    <!-- Ligne de neige entre la bannière de haut de page et la barre de navigation -->
     <div class="nav-neige">
+        <!-- 'draggable="false"' = Impossible de toucher à l'image sans la sélectionner (surlignage bleu) -->
         <img class="element-neige" src="images/nav-neige.png" alt="neige.png" draggable="false">
         <img class="element-neige" src="images/nav-neige.png" alt="neige.png" draggable="false">
         <img class="element-neige" src="images/nav-neige.png" alt="neige.png" draggable="false">
         <img class="element-neige" src="images/nav-neige.png" alt="neige.png" draggable="false">
         <img class="element-neige" src="images/nav-neige.png" alt="neige.png" draggable="false">
         <img class="element-neige" src="images/nav-neige.png" alt="neige.png" draggable="false">
+        <img class="element-neige responsive-neige" src="images/nav-neige.png" alt="neige.png" draggable="false">
+        <img class="element-neige responsive-neige" src="images/nav-neige.png" alt="neige.png" draggable="false">
     </div>
 
+    <!-- Barre de navigation -->
     <nav class="nav-bar">
         <a class="nav-home2" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
         <p class="nav-liste2"><i class="fa-solid fa-gift"></i> Liste de Noël</p>
         <a class="nav-venezuela2" href="venezuela.html"><i class="fa-solid fa-flag"></i> Noël au Vénézuela</a>
+        <!-- Source audio de la page (dans la barre de navigation) -->
         <audio id="my-audio" controls="true" autoplay loop>
             <source src="musiques/merry-christmas.mp3" type="audio/mp3">
         </audio>
     </nav>
 
+    <!-- Corps de la page -->
     <div class="body-liste">
+        <!-- Courte phrase de présentation de la page -->
         <p class="text-liste">Bienvenue sur la liste de Noël ! Vous avez un message
             tout préparé pour votre belle liste au Père-Noël !</p>
+        <!-- Texte permettant de se regiriger tout en bas de la page (max = 10000px) -->
         <span class="download-here">Téléchargez-la !</span>
 
+        <!-- Parchemin -->
         <div class="div-parchemin">
             <img class="parchemin" src="images/parchemin.png" alt="parchemin" draggable="false">
+            <!-- Texte du parchemin -->
             <div class="text-parchemin">
                 <p>Bonjour à vous cher Père Noël,<br><br>
                     Je m'appelle [prénom] et j'aimerais <br> avoir ces cadeaux s'il vous plait <br> car j'ai été sage
@@ -77,14 +95,16 @@
 
     </div>
 
-
-
+    <!-- Barre de bas de page pour télécharger la liste déjà prête en haut (à remplir directement sur le fichier téléchargé) -->
     <footer class="footer-liste">
         <a href="liste-download/liste.docx" download="Liste de Noël - Template" target="_blank"><i
                 class="fa-solid fa-download"></i>&nbspListe de Noël</a>
     </footer>
 
+    <!-- Contenu utile en javascript -->
+    <!-- Bibliothèque 'Font Awesome' pour mettre des icones réagissant (en css) comme un texte -->
     <script src="https://kit.fontawesome.com/cb9da243d3.js" crossorigin="anonymous"></script>
+    <!-- Lie le fichier js sélectionné avec la page -->
     <script src="js/liste.js"></script>
 </body>
 
