@@ -109,7 +109,6 @@
 /* Boules rouges (end) */
 
 /* Boules jaunes (start) */
-
 .boule-jaune-home {
   width: 200px;
   margin: 50px 50px;
@@ -131,9 +130,9 @@
     transform: rotate(-10deg);
   }
 }
-
 /* Boules jaunes (end) */
 
+/* Animation du texte en haut de page */
 @keyframes flash {
   0% {
     color: transparent;
@@ -176,6 +175,8 @@
 .gift {
   width: 200px;
 }
+
+/* Animation du cadeau en haut de page */
 
 @keyframes gift {
   0% {
@@ -224,104 +225,102 @@
 }
 
 @media screen and (max-width: 1325px) {
-	.boule-rouge-home, .boule-jaune-home {
-		width: 150px;
-	}
-	.sapin-home {
-		width: 650px;
-	}
-	@media screen and (max-width: 1130px) {
-		.boule-rouge-home, .boule-jaune-home {
-			width: 100px;
-		}
-		.sapin-home {
-			width: 550px;
-		}
-		@media screen and (max-width: 920px) {
-			.boule-rouge-home, .boule-jaune-home {
-				width: 75px;
-			}
-			.sapin-home {
-				width: 400px;
-			}
-			@media screen and (max-width: 735px) {
-				.boule-rouge-home, .boule-jaune-home {
-					width: 60px;
-				}
-				.sapin-home {
-					width: 300px;
-				}
-				@media screen and (max-width: 600px) {
-					.boule-rouge-home, .boule-jaune-home {
-						width: 45px;
-					}
-					.sapin-home {
-						width: 200px;
-					}
-					@media screen and (max-width: 500px) {
-						.boule-rouge-home, .boule-jaune-home {
-							width: 35px;
-						}
-						.sapin-home {
-							width: 150px;
-						}
-						@media screen and (max-width: 400px) {
-							.boule-rouge-home, .boule-jaune-home {
-								width: 27px;
-							}
-							.sapin-home {
-								width: 100px;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-@media screen and (max-width: 920px) {
-	.happy-new-year-home {
-		font-size: 75px;
-	}
-	.gift {
-		width: 175px;
-	}
-	@media screen and (max-width: 800px) {
-		.happy-new-year-home {
-			font-size: 55px;
-		}
-		.gift {
-			width: 150px;
-		}
-		@media screen and (max-width: 700px) {
-			.gift {
-				width: 125px;
-			}
-			@media screen and (max-width: 600px) {
-				.happy-new-year-home {
-					font-size: 40px;
-				}
-				.gift {
-					width: 100px;
-				}
-				@media screen and (max-width: 500px) {
-					.happy-new-year-home {
-						font-size: 35px;
-					}
-					.gift {
-						width: 75px;
-					}
-					@media screen and (max-width: 400px) {
-						.happy-new-year-home {
-							font-size: 25px;
-						}
-						.gift {
-							width: 50px;
-						}
-					}
-				}
-			}
-		}
-	}
+  .boule-rouge-home,
+  .boule-jaune-home {
+    width: 150px;
+  }
+  .sapin-home {
+    width: 650px;
+  }
+  @media screen and (max-width: 1130px) {
+    .boule-rouge-home,
+    .boule-jaune-home {
+      width: 100px;
+    }
+    .sapin-home {
+      width: 550px;
+    }
+    @media screen and (max-width: 920px) {
+      .boule-rouge-home,
+      .boule-jaune-home {
+        width: 75px;
+      }
+      .sapin-home {
+        width: 400px;
+      }
+      .happy-new-year-home {
+        font-size: 75px;
+      }
+      .gift {
+        width: 175px;
+      }
+      @media screen and (max-width: 800px) {
+        .happy-new-year-home {
+          font-size: 55px;
+        }
+        .gift {
+          width: 150px;
+        }
+        @media screen and (max-width: 735px) {
+          .boule-rouge-home,
+          .boule-jaune-home {
+            width: 60px;
+          }
+          .sapin-home {
+            width: 300px;
+          }
+          @media screen and (max-width: 700px) {
+            .gift {
+              width: 125px;
+            }
+            @media screen and (max-width: 600px) {
+              .boule-rouge-home,
+              .boule-jaune-home {
+                width: 45px;
+              }
+              .sapin-home {
+                width: 200px;
+              }
+              .happy-new-year-home {
+                font-size: 40px;
+              }
+              .gift {
+                width: 100px;
+              }
+              @media screen and (max-width: 500px) {
+                .boule-rouge-home,
+                .boule-jaune-home {
+                  width: 35px;
+                }
+                .sapin-home {
+                  width: 150px;
+                }
+                .happy-new-year-home {
+                  font-size: 35px;
+                }
+                .gift {
+                  width: 75px;
+                }
+                @media screen and (max-width: 400px) {
+                  .boule-rouge-home,
+                  .boule-jaune-home {
+                    width: 27px;
+                  }
+                  .sapin-home {
+                    width: 100px;
+                  }
+                  .happy-new-year-home {
+                    font-size: 25px;
+                  }
+                  .gift {
+                    width: 50px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
